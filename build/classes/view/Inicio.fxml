@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="tccrazy.InicioController">
+   <children>
+      <Button fx:id="btnProdutos" layoutX="31.0" layoutY="39.0" mnemonicParsing="false" onAction="#btnProdutosClick" prefHeight="324.0" prefWidth="252.0" text="Produtos" />
+      <Button fx:id="btnVendas" layoutX="331.0" layoutY="39.0" mnemonicParsing="false" onAction="#btnVendasClick" prefHeight="324.0" prefWidth="252.0" text="Vendas" />
+   </children>
+</AnchorPane>

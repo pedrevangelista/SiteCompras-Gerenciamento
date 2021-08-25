@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="TCCrazy">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/TCCrazy.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

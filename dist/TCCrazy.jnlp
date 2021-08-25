@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="TCCrazy.jnlp">
+  <information>
+    <title>TCCrazy</title>
+    <vendor>aluno</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="TCCrazy.jar" size="30155" download="eager" />
+    <jar href="lib\mysqlconnectorjava5.1.26bin.jar" size="855948" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="TCCrazy" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="tccrazy.TCCrazy"  name="TCCrazy" />
+  <update check="always"/>
+</jnlp>

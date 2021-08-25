@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tccrazy.PrincipalController">
+   <children>
+      <TableView fx:id="tblProdutos" layoutX="34.0" layoutY="439.0" onMousePressed="#tblProdutosMouseClick" prefHeight="255.0" prefWidth="766.0">
+        <columns>
+          <TableColumn fx:id="colCod" prefWidth="73.0" text="Codigo" />
+            <TableColumn fx:id="colNome" prefWidth="228.0" text="Nome" />
+          <TableColumn fx:id="colSexo" prefWidth="75.0" text="Sexo" />
+            <TableColumn fx:id="colDesc" minWidth="0.0" prefWidth="389.0" text="Descrição" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnCadastrar" layoutX="27.0" layoutY="308.0" mnemonicParsing="false" onAction="#btnCadastrarClick" prefHeight="11.0" prefWidth="150.0" text="Cadastrar">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <HBox layoutX="389.0" layoutY="392.0" prefHeight="47.0" prefWidth="280.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnAlterar" mnemonicParsing="false" onAction="#btnAlterarClick" prefHeight="34.0" prefWidth="96.0" text="Alterar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDeletar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnDeletarClick" prefHeight="34.0" prefWidth="96.0" text="Deletar">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="35.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="btnLimpar" layoutX="242.0" layoutY="309.0" mnemonicParsing="false" onAction="#btnLimparClick" prefHeight="21.0" prefWidth="66.0" text="Limpar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <VBox layoutX="19.0" layoutY="353.0" prefHeight="97.0" prefWidth="256.0" spacing="12.0">
+         <children>
+            <ComboBox fx:id="cbPesquisa" prefWidth="150.0" promptText="Pesquisar Por" visibleRowCount="4" />
+            <TextField fx:id="edtPesquisa" onKeyReleased="#edtPesquisaKeyReleased" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <TextArea fx:id="edtDescricao" layoutX="108.0" layoutY="83.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="73.0" prefHeight="12.0" prefWidth="74.0" text="Descrição:">
+         <padding>
+            <Insets top="11.0" />
+         </padding>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="39.0" text="Nome:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="edtNome" layoutX="108.0" layoutY="37.0" prefHeight="25.0" prefWidth="200.0" />
+      <ComboBox fx:id="cbSexo" layoutX="379.0" layoutY="37.0" prefWidth="150.0" promptText="Sexo:" />
+      <Button fx:id="btnGrade" layoutX="475.0" layoutY="121.0" mnemonicParsing="false" onAction="#btnGradeClick" prefHeight="218.0" prefWidth="240.0" text="Grades" />
+      <Button fx:id="btnVoltar" layoutX="696.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnVoltarClick" text="Voltar" />
+   </children>
+</AnchorPane>
